@@ -1,0 +1,98 @@
+body{
+    background: url("/www/img/background-2.gif");
+    background-size: cover;
+}
+
+.outer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 90%;
+    height: 90%;
+    border-radius: 3vh;
+
+    background-color: #33373d;
+}
+
+.title{
+    color: white;
+}
+.subtitle{
+    color: gray
+}
+.inner-title{
+    font-weight: 100;
+}
+.center{ text-align: center;}
+
+.inner{
+    background-color: #33373d;
+    margin: 50px;
+}
+
+label{
+    color: lightgray;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.iText{
+    outline: none;
+    border: 2px solid #2C2F33;
+    background-color: #2C2F33;
+    color: lightgray;
+    height: 40px;
+
+    border-radius: 5px;
+}
+.iText:hover{
+    border: 2px solid #000000;
+    transition: 0.2s;
+}
+.iText:focus{
+    border: 2px solid #7289DA;
+    transition: 0.2s;
+}
+::placeholder{
+    color: gray;
+}
+
+.row-labels{
+    width: 100%;
+}
+.w20{
+    margin-right: 20%;
+}
+.w30{
+    width: 30%;
+    margin-right: 2%;
+}
+.w30-t{
+    width: 35.4%;
+}
+.w50{
+    width: 47%;
+    margin-right: 2%;
+}
+.w50-t{
+    width: 50.6%;
+}
+.w100{
+    width: 100%;
+}
+
+.buttonGroup{
+    position: absolute;
+    bottom: 50px;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #7289DA;
+    border: 2px solid #7289DA;
+}
+.btn-primary:hover, .btn-primary:active{
+    background-color: #6078ce;
+    border: 2px solid #6078ce;
+}

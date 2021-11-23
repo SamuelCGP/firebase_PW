@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro Social</title>
+</head>
+<body>
+    <!--<h1 class="center title">Cadastro Social</h1>-->
+
+    <div class="outer">
+        <h1 class="center inner-title title">Faça o seu cadastro!</h1>
+        <h4 class="center inner-title subtitle">Só precisamos de algumas informações</h4>
+
+        <div class="inner">
+
+            <div class="row-1">
+                <div class="row-labels">
+                    <label id="lNome">Nome</label>          
+                </div>
+
+                <div class="row-inputs">
+                    <input id="iNome" class="iText w100" type="text" placeholder="Nome completo">
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="row-labels">
+                    <label id="lCPF" class="w30">CPF</label>
+                    <label id="lData" class="w30">Data de Nascimento</label>
+                    <label id="lSexo">Sexo</label>
+                </div>
+
+                <div class="row-inputs">
+                    <input id="iCPF" class="iText w30" type="text" placeholder="CPF">
+                    <input id="iData" class="iText w30" type="date" placeholder="CPF">
+                    <input id="iMasculino" type="radio" class="radio" name="sexo" id="masculino" value="Masculino" checked="true">
+                        <label id="lMasculino" for="masculino">Masculino</label>
+                    <input id="iFeminino" type="radio" class="radio" name="sexo" id="feminino" value="Feminino">
+                        <label id="lFeminino" for="masculino">Feminino</label>
+                </div>
+            </div>
+
+            <div class="row-3">
+                <div class="row-labels">
+                    <label id="lEstadoCivil" class="w50">Estado Civil</label>
+                    <label id="lRenda" class="w50">Renda mensal</label>
+                </div>
+                <div class="row-inputs">
+                    <select id="estadoCivil" class="iText w50">
+                        <option value="Solteiro(a)">Solteiro(a)</option>
+                        <option value="Casado(a)">Casado(a)</option>
+                        <option value="Separado(a)">Separado(a)</option>
+                        <option value="Divorciado(a)">Divorciado(a)</option>
+                        <option value="Viúvo(a)">Viúvo(a)</option>
+                    </select>
+                    <input id="iRenda" class="iText w50-t" type="text" placeholder="Renda Mensal">
+                </div>
+            </div>
+
+            <h4 class="inner-title subtitle">Endereço</h4>
+
+            <div class="row-4">
+                <div class="row-labels">
+                    <label id="lLogradouro" class="w30">Logradouro</label>
+                    <label id="lNumero" class="w30">Número</label>
+                    <label id="lComplemento">Complemento</label>
+                </div>
+
+                <div class="row-inputs">
+                    <input id="iLogradouro" class="iText w30" type="text" placeholder="Logradouro">
+                    <input id="iNumero" class="iText w30" type="text" placeholder="Numero">
+                    <input id="iComplemento" class="iText w30-t" type="text" placeholder="Complemento">
+                </div>
+            </div>
+
+            <div class="row-5">
+                <div class="row-labels">
+                    <label id="lEstado" class="w50">Estado</label>
+                    <label id="lCidade" class="w50">Cidade</label>
+                </div>
+                <div class="row-inputs">
+                    <select id="estado" class="iText w50">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RR">RR</option>
+                        <option value="RO">RO</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    <input id="iCidade" class="iText w50-t" type="text" placeholder="Cidade">
+                </div>
+            </div>
+
+            <div class="buttonGroup center">
+                <button type="button" class="btn btn-primary">Inserir</button>
+                <button type="button" class="btn btn-outline-secondary">Listar</button>
+                <button type="button" class="btn btn-outline-secondary">Editar</button>
+                <button type="button" class="btn btn-danger">Excluir</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</html>
