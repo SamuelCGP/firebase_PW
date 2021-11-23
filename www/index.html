@@ -7,9 +7,13 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Cadastro Social</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+    <script src="js/funcoes.js"></script>
 </head>
 <body>
-    <!--<h1 class="center title">Cadastro Social</h1>-->
 
     <div class="outer">
         <h1 class="center inner-title title">Faça o seu cadastro!</h1>
@@ -115,6 +119,8 @@
                     <input id="iCidade" class="iText w50-t" type="text" placeholder="Cidade">
                 </div>
             </div>
+
+            <div id="resultado"></div>
 
             <div class="buttonGroup center">
                 <button type="button" class="btn btn-primary">Inserir</button>
