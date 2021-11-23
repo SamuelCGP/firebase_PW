@@ -11,7 +11,6 @@
 	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script src="js/firebase.js"></script>
-    <script src="js/funcoes.js"></script>
 </head>
 <body>
 
@@ -54,7 +53,7 @@
                     <label id="lRenda" class="w50">Renda mensal</label>
                 </div>
                 <div class="row-inputs">
-                    <select id="estadoCivil" class="iText w50">
+                    <select id="iEstadoCivil" class="iText w50">
                         <option value="Solteiro(a)">Solteiro(a)</option>
                         <option value="Casado(a)">Casado(a)</option>
                         <option value="Separado(a)">Separado(a)</option>
@@ -87,7 +86,7 @@
                     <label id="lCidade" class="w50">Cidade</label>
                 </div>
                 <div class="row-inputs">
-                    <select id="estado" class="iText w50">
+                    <select id="iEstado" class="iText w50">
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
                         <option value="AP">AP</option>
@@ -123,14 +122,17 @@
             <div id="resultado"></div>
 
             <div class="buttonGroup center">
-                <button type="button" class="btn btn-primary">Inserir</button>
-                <button type="button" class="btn btn-outline-secondary">Listar</button>
-                <button type="button" class="btn btn-outline-secondary">Editar</button>
-                <button type="button" class="btn btn-danger">Excluir</button>
+                <button id="btnInserir" type="button" class="btn btn-primary">Inserir</button>
+                <button id="btnListar" type="button" class="btn btn-outline-secondary">Listar</button>
+                <button id="btnEditar" type="button" class="btn btn-outline-secondary">Editar</button>
+                <button id="btnExcluir" type="button" class="btn btn-danger">Excluir</button>
             </div>
         </div>
 
     </div>
 </body>
+
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/funcoes.js"></script>
+<script src="js/form.js"></script>
 </html>

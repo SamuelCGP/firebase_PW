@@ -1,9 +1,7 @@
-function cadastrar(campo, valor) {
+function cadastrar(dados) {
     var db = firebase.firestore();
-
-    db.collection("users").add({
-        campo: valor
-    })
+    var dados = getFields();
+    db.collection("users").add(dados)
         .then((docRef) => {
             console.log("Document written with ID: ", docRef.id);
         })

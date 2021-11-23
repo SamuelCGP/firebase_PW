@@ -1,5 +1,5 @@
 body{
-    background: url("/www/img/background-2.gif");
+    background: url("../img/background-2.gif");
     background-size: cover;
 }
 
@@ -70,7 +70,7 @@ label{
     margin-right: 2%;
 }
 .w30-t{
-    width: 35.4%;
+    width: 35.2%;
 }
 .w50{
     width: 47%;
