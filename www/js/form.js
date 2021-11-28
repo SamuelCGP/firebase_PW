@@ -38,12 +38,16 @@ function getFields(){
 function changePage(){
     switch(currentPage){
         case "index":
-            window.location.href = "/www/listar.html"
+            window.location.href = getBaseUrl() + "listar.html"
             break;
         case "listar":
-            window.location.href = "/www/index.html"
+            window.location.href = getBaseUrl() + "index.html"
             break;
         default:
             break;
     }
+}
+
+function getBaseUrl() {
+    return window.location.href.match(/^.*\//);
 }
