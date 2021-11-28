@@ -38,23 +38,34 @@ function editar(valor, valorAtual) {
         });
 }
 
-function listar(valor) {
+function listar(){
     var db = firebase.firestore();
+    var ag = db.collection("users");
 
-    db.collection("users").where("first", "==", valor)
-        .get()
-        .then((querySnapshot) => {
-            querySnapshot.forEach((doc) => {
-                // doc.data() is never undefined for query doc snapshots
-                console.log(doc.id, " => ", doc.data());
-
-                $('#resultado').append(doc.id + ' - ' + doc.data().first + '<br>');
-            });
-        })
-        .catch((error) => {
-            console.log("Error getting documents: ", error);
+    ag.get()
+    .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+            console.log(doc.id, " => ", doc.data());
+            $("#tableData").append("<tr>");
+            $("#tableData").append("<td class='table-active' scope='row'>" + doc.id + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().nome + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().cpf + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().data + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().sexo + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().estadoCivil + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().renda + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().logradouro + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().numero + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().complemento + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().estado + "</td>");
+            $("#tableData").append("<td class='table-active'>" + doc.data().cidade + "</td>");
+            $("#tableData").append("<td class='table-active'><button type='button' class='btn btn-outline-secondary'>Editar</button> | <button type='button' class=\"btn shadow-none btn-danger\" style='background-color: #dc3545 !important'>Excluir</button></td>");
+            $("#tableData").append("</tr>");
         });
-
+    })
+    .catch((error) => {
+        console.log("Error getting documents: ", error);
+    });
 }
 
 function excluir(valor) {

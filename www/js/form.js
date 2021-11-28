@@ -16,7 +16,7 @@ function getFields(){
 
     fields.nome = document.getElementById("iNome").value;
     fields.cpf = document.getElementById("iCPF").value;
-    fields.data = document.getElementById("iCPF").value;
+    fields.data = document.getElementById("iData").value;
 
     if(document.getElementById("iMasculino").checked == true){
         fields.sexo = "masculino"
