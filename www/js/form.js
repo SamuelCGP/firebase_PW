@@ -1,10 +1,3 @@
-var btnInserir = document.getElementById("btnInserir");
-var btnListar = document.getElementById("btnListar");
-var btnEditar = document.getElementById("btnEditar");
-var btnExcluir = document.getElementById("btnExcluir");
-
-btnInserir.addEventListener('click', cadastrar)
-
 function getFields(){
     // FIELDS
     var fields = {
@@ -40,4 +33,17 @@ function getFields(){
     fields.cidade = document.getElementById("iCidade").value;
 
     return fields;
+}
+
+function changePage(){
+    switch(currentPage){
+        case "index":
+            window.location.href = "/www/listar.html"
+            break;
+        case "listar":
+            window.location.href = "/www/index.html"
+            break;
+        default:
+            break;
+    }
 }

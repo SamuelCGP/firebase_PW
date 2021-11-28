@@ -32,6 +32,10 @@ body{
     margin: 50px;
 }
 
+#img-logo{
+    width: 5%;
+}
+
 label{
     color: lightgray;
     font-weight: 500;

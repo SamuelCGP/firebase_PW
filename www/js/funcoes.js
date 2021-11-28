@@ -3,9 +3,11 @@ function cadastrar(dados) {
     var dados = getFields();
     db.collection("users").add(dados)
         .then((docRef) => {
+            alert("Document written");
             console.log("Document written with ID: ", docRef.id);
         })
         .catch((error) => {
+            alert("Error adding document: ", error);
             console.error("Error adding document: ", error);
         });
 }

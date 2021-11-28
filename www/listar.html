@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro Social</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="js/firebase.js"></script>
+</head>
+<body>
+
+    <div class="outer">
+        
+        <div class="row-img">
+            <div class="row-labels center">
+                <img id="img-logo" src="img/firebase-logo.png">
+            </div>
+        </div>
+
+        <h1 class="center inner-title title">Consulta</h1>
+        <h4 class="center inner-title subtitle">Aqui está a lista de registros</h4>
+
+        <div class="inner">
+
+            <table class="table table-dark table-striped">
+                <thead>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Second</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="table-active" scope="row">3</th>
+                        <td class="table-active">Larry the Bird</td>
+                        <td class="table-active">@twitter</td>
+                    </tr>
+                    <tr>
+                        <th class="table-active" scope="row">3</th>
+                        <td class="table-active">Larry the Bird</td>
+                        <td class="table-active"> @twitter</td>
+                    </tr>
+                    <tr>
+                        <th class="table-active" scope="row">3</th>
+                        <td class="table-active">Larry the Bird</td>
+                        <td class="table-active"> @twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="buttonGroup center">
+                <button id="btnInserir" type="button" class="btn btn-outline-secondary">Inserir</button>
+                <button id="btnListar" type="button" class="btn btn-primary">Listar</button>
+                <!--<button id="btnEditar" type="button" class="btn btn-outline-secondary">Editar</button>-->
+                <!--<button id="btnExcluir" type="button" class="btn btn-danger">Excluir</button>-->
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="js/funcoes.js"></script>
+<script src="js/form.js"></script>
+<script src="js/listar.js"></script>
+</html>
